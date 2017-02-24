@@ -1,0 +1,31 @@
+{% extends 'master' %}
+
+{% block content %}
+  {% for task in tasks %}
+    <div class="panel panel-default">
+      <div class="panel-body">
+        {{ task.task }}
+      </div>
+      <div class="panel-footer">
+        <div class="row">
+          <div class="col-md-6">
+            {{ form.open({ action: 'TasksController.update', params: {id: task.id} }) }}
+              {{ csrfField }}
+              {{ form.button('Complete', 'complete-task', { class: 'btn btn-success btn-block' }) }}
+            {{ form.close() }}
+          </div>
+          <div class="col-md-6">
+            {{ form.open({ action: 'TasksController.destroy', params: {id: task.id} }) }}
+              {{ csrfField }}
+              {{ form.button('Delete', 'delete-task', { class: 'btn btn-danger btn-block' }) }}
+            {{ form.close() }}
+          </div>
+        </div>
+      </div>
+    </div>
+  {% else %}
+    <div class="alert alert-warning">
+      Whoa! No tasks yet. Go and add some now.
+    </div>
+  {% endfor %}
+{% endblock %}

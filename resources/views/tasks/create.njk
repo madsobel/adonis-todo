@@ -1,0 +1,16 @@
+{% extends 'master' %}
+
+{% block content %}
+  {{ form.open({action: 'TasksController.store'}) }}
+
+    {{ csrfField }}
+
+    <div class="input-group">
+      {{ form.text('task', null, { class: 'form-control' }) }}
+      <span class="input-group-btn">
+        {{ form.button('Add Task', 'add-task', { class: 'btn btn-success' }) }}
+      </span>
+    </div>
+
+  {{ form.close() }}
+{% endblock %}
