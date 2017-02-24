@@ -1,6 +1,6 @@
 # AdonisJs Todo App
 
-This repo is the finished product of my blog post [here](https://github.com/adonisjs/adonis-framework) where we are building a todo app with AdonisJs.
+This repo is the finished product of my blog post [here](https://madsobel.com/how-to-make-a-todo-app-with-adonisjs) where we are building a todo app with AdonisJs.
 
 ## Installation
 
@@ -12,4 +12,4 @@ This repo is the finished product of my blog post [here](https://github.com/adon
 
 ## Feedback
 
-If you have any feedback, or found a bug. Please post a comment on my [post](https://github.com/adonisjs/adonis-framework), create an issue here or submit a PR.
+If you have any feedback, or found a bug. Please post a comment on my [post](https://madsobel.com/how-to-make-a-todo-app-with-adonisjs), create an issue here or submit a PR.
